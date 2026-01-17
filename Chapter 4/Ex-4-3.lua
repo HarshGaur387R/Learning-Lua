@@ -23,4 +23,6 @@ end
 
 print(insert("hello world", 7, "small "))  --> hello small world
 print(insert("hello world", 1, "start: ")) --> start: hello world
-print(insert("hello world", 11, "!"))      --> start: hello world
+print(insert("hello world", 11, "!"))      --> hello world!
+print(insert("ação", 5, "!"))              --> Expected output :ação! But this won't work because
+--lua wont understand UTF code by default
